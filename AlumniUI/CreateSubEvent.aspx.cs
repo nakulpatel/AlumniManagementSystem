@@ -13,5 +13,30 @@ namespace AlumniUI
         {
 
         }
+
+        protected void btnLocations_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void btnOwners_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSponsor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnCoSponsor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnPanelist_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
