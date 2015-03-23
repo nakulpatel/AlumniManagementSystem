@@ -3063,9 +3063,12 @@ fieldset[disabled] .btn-default.active {
   color: #fff;
   background-color: #333;
 }
+.btn-temple {
+    background-color: #a41e35;
+}
 .btn-primary {
-  color: red;
-  background-color: red;
+  color: #fff;
+  background-color: #a41e35;
   border-color: #2e6da4;
 }
 .btn-primary:hover,
@@ -3075,7 +3078,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
+  background-color: #a41e35;
   border-color: #204d74;
 }
 .btn-primary:active,
@@ -3101,7 +3104,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
+  background-color: #a41e35;
   border-color: #2e6da4;
 }
 .btn-primary .badge {

@@ -10,16 +10,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link href="menubar.css" rel="stylesheet" />
+    <script>
+             $(function () {
+                 $("#datepicker").datepicker();
+             });
+     </script>
 
     <%--style sheet reference for footer--%>
     <link rel="shortcut icon" href="http://www.temple.edu/sites/all/themes/edu/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+    <%--<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
     <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_CR2SCSlcchF_V1JZKALtD7MrcD2v0JPHdUDwNYGkQWk.css" media="all" />
-    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_1Z_QIcHNvbuEiRqQcII5sIX9yVOP0oslaKtXcuHG-zw.css" media="all" />
-    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_1Z_QIcHNvbuEiRqQcII5sIX9yVOP0oslaKtXcuHG-zw.css" media="all" />--%>
+    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
     <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_f0JINAe-xjdiutTtKaZSZvnJAiYNzR00LfG88yGwIVQ.css" media="print" />
     <html xmlns="http://www.w3.org/1999/xhtml">
     <title>Sub Events</title>
+    <link rel="stylesheet" href="http://localhost:49255/code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <ling rel="stylesheet" href="ButtonColor.css" />
+        
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+    </script>
+   
 </head>
 <body>
     <%--code for menu bar--%>
@@ -27,8 +44,7 @@
         <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Alumni Event Calendar</a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                    <a class="navbar-brand" href="#">Alumni Event Calendar     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
                 </div>
@@ -48,6 +64,11 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="col-lg-2">
+            <span id="instructions">please fill in the sub event information for this event then hit next to continue creating a sub event</span>
+                </div>
+        </div>
         <!--- Sub Event Details --->
         <div class="container">
             <div class="panel-group" id="accordion">
@@ -65,7 +86,7 @@
                                         <div class="form-title">
                                             Sub Event Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="subEventName" />
+                                        <input type="text" class="form-control" id="subEventName" runat="server" />
                                     </div>
                                         </div>
 
@@ -76,7 +97,7 @@
                                         <div class="form-title">
                                             Start Date
                                         <div class="controls">
-                                            <input type="date" class="form-control" id="startDate" />
+                                            <input type="datetime" class="form-control" id="startDate" runat="server"/>
                                         </div>
                                         </div>
                                     </div>
@@ -85,7 +106,7 @@
                                         <div class="form-title">
                                             End Date
                                         <div class="controls">
-                                            <input type="text" class="form-control" id="endDate" />
+                                            <input type="text" class="form-control" id="endDate" runat="server" />
                                         </div>
                                         </div>
                                     </div>
@@ -100,7 +121,7 @@
                                         <div class="form-title">
                                             Start Time
                                         <div class="controls">
-                                            <input type="text" class="form-control" id="startTime" />
+                                            <input type="text" class="form-control" id="startTime" runat="server"/>
                                         </div>
                                         </div>
                                     </div>
@@ -109,7 +130,7 @@
                                         <div class="form-title">
                                             End Time
                                         <div class="controls">
-                                            <input type="text" class="form-control" id="endTime" />
+                                            <input type="text" class="form-control" id="endTime" runat="server"/>
                                         </div>
                                         </div>
                                     </div>
@@ -118,7 +139,7 @@
                                         <div class="form-title">
                                             Registration URL
                                         <div class="controls">
-                                            <input type="url" class="form-control" id="subEventURL" />
+                                            <input type="url" class="form-control" id="subEventURL" runat="server" />
                                         </div>
                                         </div>
                                     </div>
@@ -141,11 +162,13 @@
                         </div>
                     </div>
                 </div>
+                <br />
 
                 <%--owner panel--%>
+                <div class="panel-group" id="accordion2">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Sub Event Owner
+                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Sub Event Owner
                         </a>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse in ">
@@ -158,7 +181,7 @@
                                         <div class="form-title">
                                             Owner First Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="ownerFirstName" />
+                                        <input type="text" class="form-control" id="ownerFirstName" runat="server" />
                                     </div>
                                         </div>
 
@@ -167,7 +190,7 @@
                                         <div class="form-title">
                                             Owner Last Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="ownerLastName" />
+                                        <input type="text" class="form-control" id="ownerLastName" runat="server" />
                                     </div>
                                         </div>
 
@@ -176,7 +199,7 @@
                                         <div class="form-title">
                                             E-mail
                                     <div class="controls">
-                                        <input type="email" class="form-control" id="Owneremial" />
+                                        <input type="email" class="form-control" id="Owneremial" runat="server" />
                                     </div>
                                         </div>
 
@@ -191,7 +214,7 @@
                                         <div class="form-title">
                                             Phone Number
                                         <div class="controls">
-                                            <input type="text" class="form-control" id="OwnerphoneNumber" />
+                                            <input type="text" class="form-control" id="OwnerphoneNumber" runat="server" />
 
                                         </div>
                                         </div>
@@ -200,18 +223,21 @@
                                     </div>
                                     <div class="col-sm-2">
                                         <br />
-                                        <a class="btn btn-primary" id="additionalowners">Add additional owners</a>
+                                        <asp:Button ID="btnOwners" runat="server" Text="Add additional Owners" OnClick="btnOwners_Click" class="btn btn-primary"/>
+                                        <%--<a class="btn btn-primary" id="additionalowners">Add additional owners</a>--%>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    </div>
 
                 <%--location panel--%>
+                <div class="panel-group" id="accordion3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Location
+                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">Location
                         </a>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse in ">
@@ -222,7 +248,7 @@
                                         <div class="form-title">
                                             Building Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="buildingName" />
+                                        <input type="text" class="form-control" id="buildingName" runat="server" />
                                     </div>
                                         </div>
 
@@ -231,7 +257,7 @@
                                         <div class="form-title">
                                             Room Number
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="roomNumber" />
+                                        <input type="text" class="form-control" id="roomNumber" runat="server"/>
                                     </div>
                                         </div>
                                     </div>
@@ -239,7 +265,7 @@
                                         <div class="form-title">
                                             Street Address 1
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="address 1" />
+                                        <input type="text" class="form-control" id="address1" runat="server" />
                                     </div>
                                         </div>
 
@@ -248,7 +274,7 @@
                                         <div class="form-title">
                                             Street Address 2
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="address2" />
+                                        <input type="text" class="form-control" id="address2" runat="server" />
                                     </div>
                                         </div>
 
@@ -264,7 +290,7 @@
                                         <div class="form-title">
                                             City
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="city" />
+                                        <input type="text" class="form-control" id="city" runat="server"/>
                                     </div>
                                         </div>
                                     </div>
@@ -272,7 +298,7 @@
                                         <div class="form-title">
                                             State
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="state" />
+                                        <input type="text" class="form-control" id="state" runat="server" />
                                     </div>
                                         </div>
                                     </div>
@@ -280,13 +306,14 @@
                                         <div class="form-title">
                                             Zip Code
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="Zip Code" />
+                                        <input type="text" class="form-control" id="ZipCode" runat="server"/>
                                     </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-2">
                                         <br />
-                                        <a class="btn btn-primary" id="a1">Add additional locations</a>
+                                        <asp:Button ID="btnLocations" runat="server" Text="Add additional locations" OnClick="btnLocations_Click" CssClass="btn btn-primary" />
+                                        <%--<a class="btn btn-primary" runat="server" id="a1">Add additional locations</a>--%>
                                     </div>
 
                                 </div>
@@ -294,10 +321,12 @@
                         </div>
                     </div>
                 </div>
+                    </div>
                 <%--sponsor panel--%>
+                <div class="panel-group" id="accordion4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Sponsors
+                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">Sponsors
                         </a>
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse in ">
@@ -317,7 +346,7 @@
                                     <div class="form-title">
                                         Sponsor Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="sponsorName" />
+                                        <input type="text" class="form-control" id="sponsorName" runat="server" />
                                     </div>
                                     </div>
                                 </div>
@@ -325,7 +354,7 @@
                                     <div class="form-title">
                                         E-mail
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="SponsorEmail" />
+                                        <input type="text" class="form-control" id="SponsorEmail" runat="server" />
                                     </div>
                                     </div>
                                 </div>
@@ -335,11 +364,11 @@
                                      <br />
                                         <div class="radio-inline">
                                             <label>
-                                                <input type="radio" name="optradio">Yes</label>
+                                                <input type="radio" name="optradio" runat="server">Yes</label>
                                         </div>
                                         <div class="radio-inline">
                                             <label>
-                                                <input type="radio" name="optradio">No</label>
+                                                <input type="radio" name="optradio" runat="server">No</label>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +382,7 @@
                                 <div class="form-title">
                                     Co-sponsor Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="Text1" />
+                                        <input type="text" class="form-control" id="txtCosponsorName" runat="server" />
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +390,7 @@
                                 <div class="form-title">
                                     E-mail
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="Text2" />
+                                        <input type="text" class="form-control" id="txtCosponsorEmail" runat="server"/>
                                     </div>
                                 </div>
                             </div>
@@ -371,11 +400,11 @@
                                      <br />
                                     <div class="radio-inline">
                                         <label>
-                                            <input type="radio" name="optradio">Yes</label>
+                                            <input type="radio" name="optradio" runat="server">Yes</label>
                                     </div>
                                     <div class="radio-inline">
                                         <label>
-                                            <input type="radio" name="optradio">No</label>
+                                            <input type="radio" name="optradio" runat="server">No</label>
                                     </div>
                                 </div>
                             </div>
@@ -385,21 +414,24 @@
                         <div class="row">
                             <div class="col-sm-2">
                                 <br />
-                                <a class="btn btn-primary" id="addSponsors">Add additional sponsors</a>
+                                <asp:Button ID="btnSponsors" runat="server" Text="Add additional Sponsors" OnClick="btnSponsor_Click" class="btn btn-primary"/>
+                                <%--<a class="btn btn-primary" id="addSponsors">Add additional sponsors</a>--%>
                             </div>
                             <div class="col-sm-2">
                                 <br />
-                                <a class="btn btn-primary" id="addCoSponsors">Add additional co-sponsors</a>
+                                <asp:Button ID="btnCoSponsor" runat="server" Text="Add additional Co-Sponsors" OnClick="btnCoSponsor_Click"  class="btn btn-primary"/>
+                                <%--<a class="btn btn-primary" id="addCoSponsors">Add additional co-sponsors</a>--%>
                             </div>
                         </div>
                         <br />
                     </div>
                 </div>
+                    </div>
                 <%--panelist panel--%>
-
+                <div class="panel-group" id="accordion5">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Panelist
+                        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseFive">Panelist
                         </a>
                     </div>
                     <div id="collapseFive" class="panel-collapse collapse in ">
@@ -410,7 +442,7 @@
                                     <div class="form-title">
                                         First Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="panelistFirstName" />
+                                        <input type="text" class="form-control" id="panelistFirstName" runat="server" />
                                     </div>
                                     </div>
                                 </div>
@@ -418,7 +450,7 @@
                                     <div class="form-title">
                                         Last Name
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="panelistLastName" />
+                                        <input type="text" class="form-control" id="panelistLastName" runat="server" />
                                     </div>
                                     </div>
                                 </div>
@@ -426,7 +458,7 @@
                                     <div class="form-title">
                                         E-mail
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="panelistEmail" />
+                                        <input type="text" class="form-control" id="panelistEmail" runat="server" />
                                     </div>
                                     </div>
                                 </div>
@@ -438,7 +470,7 @@
                                     <div class="form-title">
                                         Phone Number
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="panelistPhoneNumber" />
+                                        <input type="text" class="form-control" id="panelistPhoneNumber" runat="server" />
                                     </div>
                                     </div>
                                 </div>
@@ -446,24 +478,48 @@
                                     <div class="form-title">
                                         Role
                                     <div class="controls">
-                                        <input type="text" class="form-control" id="penelistRole" />
+                                        <input type="text" class="form-control" id="penelistRole" runat="server" />
                                     </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
                                     <br />
-                                    <a class="btn btn-primary" id="addPanelist">Add additional Panelist</a>
+                                    <asp:Button ID="btnPanelist" runat="server" Text="Add additional Panelist" OnClick="btnPanelist_Click" CssClass="btn btn-primary" />
+                                    <%--<a class="btn btn-primary" id="addPanelist">Add additional Panelist</a>--%>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    </div>
 
                 </div>
             </div>
+            <%--next button--%>
             <div class="col-lg-offset-11">
-                <a class="btn btn-primary" href="eventConfirmation.aspx" id="next">Next</a>
+                <a class="btn btn-primary" href="#myModal" id="next" data-toggle="modal">Next</a>
             </div>
+
+            <%--modal--%>
+
+            <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to add tasks for this sub event?</p>
+                <%--<p class="text-warning"><small>If no your sub event will be saved</small></p>--%>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">no</button>
+                <button type="button" class="btn btn-primary">yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
             </div>
         
     </form>

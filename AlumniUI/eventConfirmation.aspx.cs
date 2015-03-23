@@ -18,5 +18,10 @@ namespace AlumniUI
         {
             Response.Redirect("cTask.aspx");
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
