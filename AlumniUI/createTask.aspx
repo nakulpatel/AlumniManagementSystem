@@ -9,7 +9,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
 
 <%--make things centered--%>
 <style>
@@ -115,10 +115,10 @@
                                                 <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button9" runat="server" Text="Update" />
+                                                <asp:Button ID="Button9" runat="server" Text="Update" class="btn btn-primary"/>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button1" runat="server" Text="Delete" />
+                                                <asp:Button ID="Button1" runat="server" Text="Delete" class="btn btn-primary"/>
                                             </td>
                                         </tr>
                                         <tr class="even gradeC">
@@ -132,10 +132,10 @@
                                                 <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button8" runat="server" Text="Update" />
+                                                <asp:Button ID="Button8" runat="server" Text="Update" class="btn btn-primary"/>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button2" runat="server" Text="Delete" />
+                                                <asp:Button ID="Button2" runat="server" Text="Delete" class="btn btn-primary"/>
                                             </td>
                                         </tr>
                                         <tr class="odd gradeA">
@@ -149,10 +149,10 @@
                                                 <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button7" runat="server" Text="Update" />
+                                                <asp:Button ID="Button7" runat="server" Text="Update" class="btn btn-primary" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button3" runat="server" Text="Delete" />
+                                                <asp:Button ID="Button3" runat="server" Text="Delete" class="btn btn-primary" />
                                             </td>
                                         </tr>
                                         <tr class="even gradeA">
@@ -166,10 +166,10 @@
                                                 <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button6" runat="server" Text="Update" />
+                                                <asp:Button ID="Button6" runat="server" Text="Update" class="btn btn-primary"/>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button4" runat="server" Text="Delete" />
+                                                <asp:Button ID="Button4" runat="server" Text="Delete" class="btn btn-primary"/>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -335,7 +335,7 @@
         <asp:Label ID="Label6" runat="server" Text="Due Date:"></asp:Label>
         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button5" runat="server" Text="Add Task" />
+        <asp:Button ID="Button5" runat="server" Text="Add Task" class="btn btn-primary" />
 
         </div>
 
