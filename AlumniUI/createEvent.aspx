@@ -1,74 +1,17 @@
-﻿-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="createEvent.aspx.cs" Inherits="AlumniUI.createEvent" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="createEvent.aspx.cs" Inherits="AlumniUI.createEvent" %>
 
 
 
-<%--<!DOCTYPE html>
-<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
-<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<Script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
- <link href="menubar.css" rel="stylesheet" />
-
-    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
-
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />--%>
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"/>
-<%--<style>
-    /*.center {
-        /*margin-left:0;
-        margin-right:0;
-       
-    }*/
-    .logo {
-        z-index: 1;
-        left: 52px;
-        top: 32px;
-        position: absolute;
-        height: 38px;
-        width: 553px;
-    }
-    .auto-style1 {
-        width: 430px;
-        height: 114px;
-        text-align: center;
-        z-index: 1;
-        left: 292px;
-        top: -25px;
-        position: relative;
-    }
-    .auto-style2 {
-        color: #990000;
-    }
-    #form1 {
-        width: 230px;
-        height: 428px;
-        margin-left: 0px;
-        z-index: 1;
-        left: 337px;
-        top: -5px;
-        position: relative;
-    }
-</style>--%>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-
-<script>
-    $(function () {
-        $("#datepicker").datepicker();
-    });
-</script><%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddEvent.aspx.cs" Inherits="AlumniUI.createEvent" %>--%>
 
 
 <!DOCTYPE html>
 <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<Script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <link href="menubar.css" rel="stylesheet" />
@@ -115,6 +58,7 @@
         text-decoration: underline;
     }
 </style>
+
 <%--<form id="form1" runat="server">--%>
     <%--code for menu bar--%>
 
@@ -130,7 +74,7 @@
                 </li>
                 <li class="active"><a href="createEvent.aspx">Create Events</a>
                 </li>
-                <li><a href="createTask.aspx">Create Tasks</a>
+                <li><a href="createTask.aspx">Manage Tasks</a>
                 </li>
                 <li><a href="viewEvent.aspx">View Events</a>
                 </li>
@@ -153,105 +97,133 @@
   </div>
   
 
-<div class="container">
-
-           
+<div class="container">       
     <%-- Start of Event Details Block--%>
 
-        &nbsp;<div class="panel-group" id="accordion">
+        <div class="panel-group" id="accordion">
                        
                    <div class="panel panel-default"> 
                         <div class="panel-heading">
-                             <h3>
+                             
                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Event Details</a>
-                             </h3>
+                             
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                              <div class="panel-body">
                                   
                                  <div class="row">
 								    
-                                      <div class="col-sm-6">
+                                      <div class="col-sm-3">
 										<div class="form-group">
 											<label class="control-label">Event Name</label>
 											<input class="form-control" type="text">
 										</div>
 									    </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label">Event Owner</label>
-													<input class="form-control" type="text">
+													<input class="form-control" type="text"/>
                                                 </div>
 									    </div>
                                  </div>
 
                                  <div class="row">
 
-                                           <div class="col-sm-6">
+                                           <div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label">Event Start Date</label>
-													<input class="form-control" type="text">
+													<input class="form-control" type="text" id="datepicker"/>
                                                 </div>
 											</div>
 										
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label">Event End Date</label>
-													<input class="form-control" type="text">
+													<input class="form-control" type="text" id="datepicker2"/>
 												</div>
 											</div>
                                      </div>
                                  
 								<div class="row">
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label">Event Start Time</label>
-													<input class="form-control" type="text">
+													<input class="form-control" type="text" id="starttimepicker"/>
                                                 </div>
 											</div>
 										
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label">Event End Time</label>
-													<input class="form-control" type="text">
+													<input class="form-control" type="text" id="endtimepicker"/>
 												</div>
 											</div>
 										
                                         </div>
                               </div>
-                            </div>  
-                             
-     
-                                        
-    		
+                             </div> 
 
-							
-                                    
+                             
+   <%--used for date picker--%> <%--Don't move these block of code. It must be here for it to work--%>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css"/>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css"/>
+<link href="jquery.timepicker.css" rel="stylesheet" />
+<script src="jquery.timepicker.js"></script>
+<script src="jquery.timepicker.min.js"></script>
+<%--script for date picker--%>
+<script>
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+
+    $(function () {
+        $("#datepicker2").datepicker();
+    });
+</script>
+<%--script for time picker--%>
+<script>
+    $(function () {
+        $('#starttimepicker').timepicker();
+    });
+
+    $(function () {
+        $('#endtimepicker').timepicker();
+    });
+</script>
+
+
+
+
+
+                       
+             <%--   code for the panel     --%>             
                    <div class="panel panel-default">
                                 <div class="panel-heading">
-                                         <h3>
+                                         
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Miscellaneous</a>
-                                        </h3>
+                                        
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <div class="row">
-											<div class="col-sm-6">
+											<div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label"> Event Registration URL</label>
 													<input class="form-control" type="text">
 												</div>
 											</div>
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label">Projected Event Attendece</label>
+													<label class="control-label">Projected Event Attendance</label>
 													<input class="form-control" type="text">
 												</div>
 											</div>
 										</div>
                                         <div class="row">
-								        <div class="col-sm-6">
+								        <div class="col-sm-3">
 												<div class="form-group">
 													<label class="control-label">Comments</label>
 													<input class="form-control" type="text">
@@ -263,7 +235,7 @@
                        </div>
                        </div>
             </div> 
-    <%--<asp:Button ID="btnToSubevent" runat="server" Text="Next" OnClick="btnToSubevent_Click"  class="btn btn-primary"/>--%>
+
     <a href="CreateSubEvent.aspx" class="btn btn-primary btn-Sigin" data-toggle="popover" data-placement="right" data-content="Click Next to Create a SubEvent for your Event." title="" data-original-title="Popover on right" style="font-size: large; height: 43px;">
     <div class="text-center">
         <strong>Next</strong></div>
@@ -272,7 +244,7 @@
   
       
 
-                &nbsp;</div> 
+                </div> 
     
    
                       
@@ -353,6 +325,4 @@
 
   
     
-</body>		
-    	
-</html>
+
