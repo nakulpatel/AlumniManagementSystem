@@ -147,7 +147,7 @@
                                 <div style= "border:0px solid #a41e35;width:200px;height:auto" class="center">
                                 <%--<div class="row">--%>
                                     <%--<div class="col-sm-2 form-submit">--%>
-                                        <asp:Button ID="Button1" runat="server" Text="Create Report" />
+                                        <asp:Button ID="Button1" runat="server" Text="Create Report" class="btn btn-primary"/>
                                     </div>
                                 </div>
                             </div></div>

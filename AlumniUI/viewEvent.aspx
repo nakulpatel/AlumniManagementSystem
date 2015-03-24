@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <%--make things centered--%>
@@ -107,10 +107,10 @@
                                             <td>John Doe</td>
                                             <td>March 4th, 2032</td>
                                             <td class="center">
-                                                <asp:Button ID="Button1" runat="server" Text="View" />
+                                                <asp:Button ID="Button1" runat="server" Text="View" class="btn btn-primary"/>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button3" runat="server" Text="Delete" />
+                                                <asp:Button ID="Button3" runat="server" Text="Delete" class="btn btn-primary"/>
                                             </td>
                                         </tr>
                                         <tr class="even gradeC">
@@ -118,10 +118,10 @@
                                             <td>Jane Smith</td>
                                             <td>April</td>
                                             <td class="center">
-                                                <asp:Button ID="Button2" runat="server" Text="View" />
+                                                <asp:Button ID="Button2" runat="server" Text="View" class="btn btn-primary"/>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button4" runat="server" Text="Delete" />
+                                                <asp:Button ID="Button4" runat="server" Text="Delete" class="btn btn-primary"/>
                                             </td>
                                         </tr>
                                         <tr class="odd gradeA">

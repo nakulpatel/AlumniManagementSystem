@@ -263,7 +263,7 @@
                        </div>
                        </div>
             </div> 
-
+    <%--<asp:Button ID="btnToSubevent" runat="server" Text="Next" OnClick="btnToSubevent_Click"  class="btn btn-primary"/>--%>
     <a href="CreateSubEvent.aspx" class="btn btn-primary btn-Sigin" data-toggle="popover" data-placement="right" data-content="Click Next to Create a SubEvent for your Event." title="" data-original-title="Popover on right" style="font-size: large; height: 43px;">
     <div class="text-center">
         <strong>Next</strong></div>

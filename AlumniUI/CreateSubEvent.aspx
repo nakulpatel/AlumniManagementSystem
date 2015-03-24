@@ -513,8 +513,8 @@
                 <%--<p class="text-warning"><small>If no your sub event will be saved</small></p>--%>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">no</button>
-                <button type="button" class="btn btn-primary">yes</button>
+                <a type="button" class="btn btn-default" href="cTask.aspx">no</a>
+                <a type="button" class="btn btn-primary" href="eventConfirmation.aspx">yes</a>
             </div>
         </div>
     </div>

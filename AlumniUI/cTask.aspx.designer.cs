@@ -76,13 +76,13 @@ namespace AlumniUI {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox3;
         
         /// <summary>
-        /// Button1 control.
+        /// btnCatering control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnCatering;
         
         /// <summary>
         /// Label4 control.
@@ -139,21 +139,21 @@ namespace AlumniUI {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox6;
         
         /// <summary>
-        /// Button2 control.
+        /// btnEntertainment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnEntertainment;
         
         /// <summary>
-        /// Button3 control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }

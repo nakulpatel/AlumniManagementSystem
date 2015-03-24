@@ -49,14 +49,14 @@
 
 <tr><td align="left" valign="top" width="200">
 <div>
-    &nbsp;<asp:Button ID="Button1" runat="server" Text="Yes" OnClick="Button1_Click" />
+    &nbsp;<asp:Button ID="Button1" runat="server" Text="Yes" OnClick="Button1_Click" class="btn btn-primary" />
 </div><br />
   
 <%--PUT FIRST COLUMN CONTENTS HERE--%>
 
 </td><td align="left" valign="top" width="200">
 <div>
-    <asp:Button ID="Button2" runat="server" Text="No"  
+    <asp:Button ID="Button2" runat="server" Text="No"  class="btn btn-primary" 
  OnClientClick="return confirm('Your event has been saved');" />
 </div><br />
       

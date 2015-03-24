@@ -5,7 +5,7 @@
 <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
 <link href="menubar.css" rel="stylesheet" />
 <Script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -91,7 +91,7 @@
     &nbsp;<asp:CheckBox ID="CheckBox3" runat="server" />
 </div><br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="Add" />
+        <asp:Button ID="btnCatering" runat="server" Text="Add" class="btn btn-primary" />
         <br />
 <%--PUT SECOND COLUMN CONTENTS HERE--%>
     </table>
@@ -134,7 +134,7 @@
     &nbsp;<asp:CheckBox ID="CheckBox6" runat="server" />
 </div><br />
         <br />
-        <asp:Button ID="Button2" runat="server" Text="Add" />
+        <asp:Button ID="btnEntertainment" runat="server" Text="Add" class="btn btn-primary" />
         <br />
 <%--PUT SECOND COLUMN CONTENTS HERE--%>
     </table>
@@ -143,7 +143,7 @@
 
     <div style="width:100px;" class="center">
 
-        <asp:Button ID="Button3" runat="server" Text="Save" />
+        <asp:Button ID="btnSave" runat="server" Text="Save" class="btn btn-primary" />
 
     </div>
 
