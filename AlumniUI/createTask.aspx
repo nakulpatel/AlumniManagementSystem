@@ -9,7 +9,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
 
 <%--make things centered--%>
 <style>
@@ -34,7 +34,7 @@
                 </li>
                 <li><a href="createEvent.aspx">Create Events</a>
                 </li>
-                <li class="active"><a href="createTask.aspx">Create Tasks</a>
+                <li class="active"><a href="createTask.aspx">Manage Tasks</a>
                 </li>
                 <li><a href="viewEvent.aspx">View Events</a>
                 </li>
@@ -44,48 +44,52 @@
         </div>
     </div>
 </div>
+
 <%--div for dropdown list--%>
-<div style= "border:0px solid #a41e35;width:600px;"class="center">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="lbl" runat="server" Text="Task Category"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-    <asp:Label ID="Label1" runat="server" Text="Owner"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label2" runat="server" Text="Date"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label3" runat="server" Text="Event"></asp:Label>
-    <br />
+<div style="width:339px; float:left;" class="text-center">
+    Use the dropdown list to narrow down your search<br /><br />
+    Task Category<br />
     <asp:DropDownList ID="DropDownList1" runat="server">
         <asp:ListItem>Catering</asp:ListItem>
         <asp:ListItem>Decorations</asp:ListItem>
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+    <br />
+    <br />
+    Event Owner<br />
     <asp:DropDownList ID="DropDownList2" runat="server">
-        <asp:ListItem>John</asp:ListItem>
-        <asp:ListItem>Jacob</asp:ListItem>
+        <asp:ListItem>Tina Vance-Knight</asp:ListItem>
+        <asp:ListItem>Melissa Reddington</asp:ListItem>
+        <asp:ListItem>Gloria Easley</asp:ListItem>
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+    Date<br />
     <asp:DropDownList ID="DropDownList3" runat="server">
-        <asp:ListItem>January 12</asp:ListItem>
+        <asp:ListItem>April 1st, 2015</asp:ListItem>
     </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+    Event Category<br />
+    <asp:DropDownList ID="DropDownList5" runat="server">
+        <asp:ListItem>Networking Event</asp:ListItem>
+    </asp:DropDownList>
+    <br />
+    <br />
+    Event<br />
     <asp:DropDownList ID="DropDownList4" runat="server">
+        <asp:ListItem>Victory for Tyler 2015</asp:ListItem>
         <asp:ListItem>Job Fair</asp:ListItem>
     </asp:DropDownList>
-    </div>
+    <br /></div>
 
-
-
-<p></p>
-<div style= "border:0px solid #a41e35;width:1200px; height:auto"class="center">
+<div style= "border:0px solid #a41e35;width:1100px; height:auto"class="center">
      <div class="row" >
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
                     <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                             Job Fair
+                            Catering<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                 </a>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
@@ -106,7 +110,7 @@
                                     <tbody>
                                         <tr class="odd gradeX">
                                             <td>Decorations</td>
-                                            <td>John Doe</td>
+                                            <td>Tina Vance-Knight</td>
                                             <td>March 4th, 2032</td>
                                             <td class="center">
                                                 <asp:CheckBox ID="CheckBox1" runat="server" />
@@ -115,15 +119,15 @@
                                                 <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button9" runat="server" Text="Update" class="btn btn-primary"/>
+                                                <asp:Button ID="Button9" runat="server" Text="Update" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button1" runat="server" Text="Delete" class="btn btn-primary"/>
+                                                <asp:Button ID="Button1" runat="server" Text="Delete" />
                                             </td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>Food</td>
-                                            <td>Jane Smith</td>
+                                            <td>Mellissa Reddington</td>
                                             <td>April</td>
                                             <td class="center">
                                                 <asp:CheckBox ID="CheckBox2" runat="server" />
@@ -132,15 +136,15 @@
                                                 <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button8" runat="server" Text="Update" class="btn btn-primary"/>
+                                                <asp:Button ID="Button8" runat="server" Text="Update" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button2" runat="server" Text="Delete" class="btn btn-primary"/>
+                                                <asp:Button ID="Button2" runat="server" Text="Delete" />
                                             </td>
                                         </tr>
                                         <tr class="odd gradeA">
                                             <td>Entertainment</td>
-                                            <td>John Jacob Jingleheimer Schmidt</td>
+                                            <td>Gloria Easley</td>
                                             <td>January 4th</td>
                                             <td class="center">
                                                 <asp:CheckBox ID="CheckBox3" runat="server" />
@@ -149,15 +153,15 @@
                                                 <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button7" runat="server" Text="Update" class="btn btn-primary" />
+                                                <asp:Button ID="Button7" runat="server" Text="Update" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button3" runat="server" Text="Delete" class="btn btn-primary" />
+                                                <asp:Button ID="Button3" runat="server" Text="Delete" />
                                             </td>
                                         </tr>
                                         <tr class="even gradeA">
                                             <td>Misc.</td>
-                                            <td>Me</td>
+                                            <td>Steve Hazzard</td>
                                             <td>.....</td>
                                             <td class="center">
                                                 <asp:CheckBox ID="CheckBox4" runat="server" />
@@ -166,10 +170,10 @@
                                                 <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button6" runat="server" Text="Update" class="btn btn-primary"/>
+                                                <asp:Button ID="Button6" runat="server" Text="Update" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button4" runat="server" Text="Delete" class="btn btn-primary"/>
+                                                <asp:Button ID="Button4" runat="server" Text="Delete" />
                                             </td>
                                         </tr>
                                     </tbody>
@@ -181,7 +185,7 @@
                     <!--End Advanced Tables -->
 
      <!--Vendor Information -->
-    <div style= "border:0px solid #a41e35;width:1200px; height:auto"class="center">
+    <div style= "border:0px solid #a41e35;width:1100px;"class="center">
         
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -300,29 +304,6 @@
         </div>
         </div>
 
-    <!--- field labels --->
-    <%--
-    <h5>Contact Last Name</h5>
-    <h5>email</h5>
-    <h5>Phone Number</h5>
-    <h5>Street Address 1</h5>
-    <h5>Street Address 2</h5>
-    <h5>City</h5>
-    <h5>State</h5>
-    <h5>Zip Code</h5>--%>
-
-    <!--- text boxes to go with labels --->
-    <%--<input type="text" class="span4" id ="VendorName" />
-    <input type="text" class="span4" id ="ContactFirstName" />
-    <input type="text" class="span4" id ="ContactLastName" />
-    <input type="text" class="span4" id ="Email" />
-    <input type="text" class="span4" id ="PhoneNumber" />
-    <input type="text" class="span4" id ="Address1" />
-    <input type="text" class="span4" id ="Address2" />
-    <input type="text" class="span4" id ="City" />
-    <input type="text" class="span4" id ="State" />
-    <input type="text" class="span4" id ="Zip" />--%>
-
 
     <div style= "border:0px solid #a41e35;width:1200px; height:250px"class="center">
 
@@ -335,7 +316,7 @@
         <asp:Label ID="Label6" runat="server" Text="Due Date:"></asp:Label>
         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button5" runat="server" Text="Add Task" class="btn btn-primary" />
+        <asp:Button ID="Button5" runat="server" Text="Add Task" />
 
         </div>
 

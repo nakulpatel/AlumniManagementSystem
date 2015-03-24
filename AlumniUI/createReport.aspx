@@ -27,6 +27,10 @@
     .auto-style1 {
         width: 349px;
     }
+    .auto-style2 {
+        width: 349px;
+        text-align: center;
+    }
 </style>
 
 <%--code for menu bar--%>
@@ -53,39 +57,38 @@
         </div>
     </div>
 </div>
-     <%--div for dropdown list--%>
-<div style= "border:0px solid #a41e35;width:600px;"class="center">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="lbl" runat="server" Text="Event Type"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-    <asp:Label ID="Label1" runat="server" Text="Owner"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label2" runat="server" Text="Date"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label3" runat="server" Text="Event"></asp:Label>
-    <br />
+
+    <div style="width:337px; float:left;" class="auto-style2">
+        Use the dropdown list to narrow down your search<br />
+        <br />
+        Event Category<br />
     <asp:DropDownList ID="DropDownList1" runat="server">
-        <asp:ListItem>Newtorking</asp:ListItem>
-        <asp:ListItem>Fundraising</asp:ListItem>
+        <asp:ListItem>Networking Event</asp:ListItem>
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <br />
+        <br />
+        Event Owner<br />
     <asp:DropDownList ID="DropDownList2" runat="server">
-        <asp:ListItem>John</asp:ListItem>
+        <asp:ListItem>Steve Hazzard</asp:ListItem>
         <asp:ListItem>Jacob</asp:ListItem>
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        Date<br />
     <asp:DropDownList ID="DropDownList3" runat="server">
-        <asp:ListItem>January 12</asp:ListItem>
+        <asp:ListItem>March 29th, 2015</asp:ListItem>
     </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        Event<br />
     <asp:DropDownList ID="DropDownList4" runat="server">
-        <asp:ListItem>Job Fair</asp:ListItem>
+        <asp:ListItem>Tampa: Phillies Spring Training 2015</asp:ListItem>
     </asp:DropDownList>
     </div>
-    <p></p>
+
     
     <%--grid view for creating report--%>
-    <div style= "border:0px solid #a41e35;width:1700px;height:650px" class="center">
+    <div style= "border:0px solid #a41e35;width:1100px;height:650px" class="center">
      <div class="row" >
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
@@ -107,9 +110,9 @@
                                     </thead>
                                     <tbody>
                                         <tr class="odd gradeX">
-                                            <td>Basketball Game</td>
-                                            <td class="auto-style1">John Doe</td>
-                                            <td>March 4th, 2032</td>
+                                            <td><a href="http://www.alumni.temple.edu?sid=705&amp;gid=1&amp;pgid=6686&amp;cid=10558&amp;ecid=10558&amp;crid=0&amp;calpgid=4447&amp;calcid=6193">Tampa: Phillies Spring Training 2015</a></td>
+                                            <td class="auto-style1">Steve Hazzard</td>
+                                            <td>March 29th, 2015</td>
                                             <td class="center">
                                                 <asp:CheckBox ID="CheckBox1" runat="server" />
                                             </td>
@@ -147,7 +150,7 @@
                                 <div style= "border:0px solid #a41e35;width:200px;height:auto" class="center">
                                 <%--<div class="row">--%>
                                     <%--<div class="col-sm-2 form-submit">--%>
-                                        <asp:Button ID="Button1" runat="server" Text="Create Report" class="btn btn-primary"/>
+                                        <asp:Button ID="Button1" runat="server" Text="Create Report" />
                                     </div>
                                 </div>
                             </div></div>
