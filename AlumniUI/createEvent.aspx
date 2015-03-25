@@ -116,6 +116,7 @@
                                       <div class="col-sm-3">
 										<div class="form-group">
 											<label class="control-label">Event Name</label>
+                                            <span style="color:red">*</span>
 											<input class="form-control" type="text">
 										</div>
 									    </div>
