@@ -17,8 +17,9 @@
     <link href="Bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
     <link href="menubar.css" rel="stylesheet" />
+    <link href="includes/hover.css" rel="stylesheet" type="text/css">
    
    
     <title>Login Page</title>
@@ -36,17 +37,57 @@
         </style>
 
      <style>
-        .center {
-            margin: 0 auto;
-        }
-
-         .auto-style8 {
-             color: #000000;
+         .center {
+            margin: 10 auto 0 0px;
+             width: 469px;
          }
 
-         .auto-style10 {
+         .auto-style17 {
+             text-align: center;
              font-size: xx-large;
-             color: #990000;
+             color: #A41E35;
+             height: 63px;
+             width: 452px;
+         }
+         .auto-style18 {
+             color: #000000;
+             font-size: medium;
+         }
+
+         ..col-md-4 {
+             text-align: right;
+         }
+
+         .auto-style19 {
+             text-align: right;
+         }
+
+         #ContentSupport {
+             text-align: center;
+             height: 41px;
+             width: 243px;
+             z-index: 1;
+             left: 239px;
+             top: -35px;
+             position: relative;
+         }
+
+         .auto-style20 {
+             width: 26px;
+             height: 31px;
+             z-index: 5;
+             left: 453px;
+             top: 187px;
+             position: relative;
+         }
+
+         .auto-style21 {
+             width: 29px;
+             height: 26px;
+             z-index: 1;
+             left: 736px;
+             top: 443px;
+             position: absolute;
          }
 
     </style>
@@ -59,33 +100,53 @@
     <form id="form1" runat="server">
         
         <div class="container center">
-        <br /><br /><br /><br /><br /><br />
-           <div style = "border:0px; width: 500px; height: 650px;" class="center">
-             <%--<div class ="auto-style5" style="position: relative; top: 203px; width: 567px; height: 286px;">--%>
-                 <%--<span class="auto-style8">--%>
-                 <img alt="" <img class="center"src="LOGO.PNG" />
-               <div style="text-align: center; height: 86px;">
-                   <div class="col-md-9 col-offset-9 centered">
-                   <h4 class="auto-style10"> Alumni Events Management System</h4></div></div>
-                    <%--<div class="normal-signin"> --%>
-                     <h3 class="auto-style8"><strong>USERNAME:</strong></h3>
-					<input type="text" class="form-control" placeholder="Username" required="required">
-					<h3 class="auto-style8"><strong>PASSWORD:</strong></h3>								
-					<input type="password" class="form-control" placeholder="Password" required="required">
-               </br>
-		                
-                       <a class="btn btn-primary btn-Sigin" href="mainpage.aspx" style="font-size: x-large;">
-                           <strong>Login</strong></a>
-                       <p class="center-text"><strong>Forgot Password?</strong></p>
 
-                    </div>	
-            </div>							
-													
-             
+            <br />
+            <img alt="" class="auto-style21" src="Capture.PNG"  id="passwordtool" data-toggle="tooltip" title="Please Enter your Access Net Password"/><br />
+             &nbsp;
+            <div style = "padding: 0px; width: 450px; height: 430px; background-color: #FFFFFF;" class="center">
+       
+                    <img class="center"src="LOGO.PNG" /><img alt="" class="auto-style20" src="Capture.PNG" id ="myToolTip" data-toggle="tooltip"title="Plese Enter your Access Net E-mail into Username."/> 
+               
+                 <h3 class="auto-style17"><strong>ALUMNI EVENTS&nbsp; MANAGEMENT SYSTEM</strong></h3>
+ 
+ 
+
+               
+                        <h3 class="auto-style18"><strong>USERNAME:</strong></h3>
+			            <input type="text" class="form-control" placeholder="Username" required="required" />
+                 
+		
+                    
+                        <h3 class="auto-style18"><strong>PASSWORD:</strong></h3>								
+		                <input type="password" class="form-control" placeholder="Password" required="required" />
+                   
+                   </div>
             
-			    
-      								
-    </form>	
+                    <div class="auto-style19">
+                        <span class="forgot"><a href="https://accounts.temple.edu" onclick="login_openForgotPassword('https://accounts.temple.edu');return false;">Forgot Your Password?</a></span>
+                    </div>
+                   <%--<div class="col-sm-0">--%>   
+                        <a class="btn btn-primary" id ="mToolTip" data-toggle="tooltip"title="Click on Login button to Login into the system." href="mainpage.aspx" style="font-size: medium; height: 34px; width: 113px;"><strong>Login</strong></a>
+                   <%--</div>--%>
+               
+           
+        
+            </div>
+
+       
+        </form>
+          
+                 
+                     
+ 
+
+
+
+
+
+
+    </br></br> </br>    
     
 <%--footer for pages--%>
     <footer id="#footer">
@@ -164,3 +225,42 @@
 </body>		
     	
 </html>
+
+<script type="text/javascript">
+
+    function login_openForgotPassword(url) {
+
+        var passwordWin = window.open(url, 'forgotPasswordWindow', 'menubar=1,resizable=1,scrollbars=1,status=1,width=850,height=480');
+
+        passwordWin.focus();
+
+    }
+   </script>
+
+
+<script src = "js/jquery.js"></script>
+  <script src = "js/bootstrap.js"></script>
+
+<script type = "text/javascript">
+
+    $('document').ready(function () {
+
+        $('myToolTip').tooltip();
+    });
+</script>
+
+<script type = "text/javascript">
+
+    $('document').ready(function () {
+
+        $('toolTip').tooltip();
+    });
+</script>
+<script type = "text/javascript">
+
+    $('document').ready(function () {
+
+        $('mToolTip').tooltip();
+    });
+</script>
+
