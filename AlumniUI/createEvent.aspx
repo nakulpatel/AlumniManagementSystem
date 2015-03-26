@@ -115,13 +115,13 @@
 								    
                                       <div class="col-sm-3">
 										<div class="form-group">
-											<label class="control-label">Event Name</label>
+											<label class="control-label">Event Name<span style="color:red">*</span></label>
 											<input class="form-control" type="text">
 										</div>
 									    </div>
                                         <div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label">Event Owner</label>
+													<label class="control-label">Event Owner<span style="color:red">*</span></label>
 													<input class="form-control" type="text"/>
                                                 </div>
 									    </div>
@@ -131,14 +131,14 @@
 
                                            <div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label">Event Start Date</label>
+													<label class="control-label">Event Start Date<span style="color:red">*</span></label>
 													<input class="form-control" type="text" id="datepicker"/>
                                                 </div>
 											</div>
 										
                                             <div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label">Event End Date</label>
+													<label class="control-label">Event End Date<span style="color:red">*</span></label>
 													<input class="form-control" type="text" id="datepicker2"/>
 												</div>
 											</div>
@@ -148,14 +148,14 @@
 
                                             <div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label">Event Start Time</label>
+													<label class="control-label">Event Start Time<span style="color:red">*</span></label>                                                   
 													<input class="form-control" type="text" id="starttimepicker"/>
                                                 </div>
 											</div>
 										
                                             <div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label">Event End Time</label>
+													<label class="control-label">Event End Time<span style="color:red">*</span></label>
 													<input class="form-control" type="text" id="endtimepicker"/>
 												</div>
 											</div>
@@ -211,7 +211,7 @@
                                             <div class="row">
 											<div class="col-sm-3">
 												<div class="form-group">
-													<label class="control-label"> Event Registration URL</label>
+													<label class="control-label">Event Registration URL</label>
 													<input class="form-control" type="text">
 												</div>
 											</div>
