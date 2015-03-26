@@ -16,7 +16,7 @@
 
     <link href="menubar.css" rel="stylesheet" />
 
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
 
 
    
@@ -125,6 +125,24 @@
 													<input class="form-control" type="text"/>
                                                 </div>
 									    </div>
+                                        <div class="col-sm-3">
+												<div class="form-group">
+													<label class="control-label">Event Category</label>
+													<%--<input class="form-control" type="text"/>--%>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                             Event Category
+                                                           <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" role="category" aria-labelledby="dropdownMenu1">
+                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alumni Society Events</a></li>
+                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Athletics Events</a></li>
+                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Career Events</a></li>
+                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cultural Events</a></li>
+                                                            </ul>
+                                                    </div>
+                                                </div>
+									    </div>
                                  </div>
 
                                  <div class="row">
@@ -159,10 +177,18 @@
 													<input class="form-control" type="text" id="endtimepicker"/>
 												</div>
 											</div>
+                                            <div class="col-sm-3">
+												<div class="form-group">
+													<label class="control-label">Time Zone</label>
+													<input class="form-control" type="text" id="timeZone"/>
+												</div>
+											</div>
 										
                                         </div>
                               </div>
+                            
                              </div> 
+                       
 
                              
    <%--used for date picker--%> <%--Don't move these block of code. It must be here for it to work--%>
@@ -199,11 +225,13 @@
 
 
                        
-             <%--   code for the panel     --%>             
+             <%--   code for the panel     --%>    
+                       
+                       <div class="panel-group" id="accordian2">        
                    <div class="panel panel-default">
                                 <div class="panel-heading">
                                          
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Miscellaneous</a>
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Miscellaneous</a>
                                         
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse in">
@@ -235,6 +263,9 @@
                        </div>
                        </div>
             </div> 
+    </div>
+    
+    
 
     <a href="CreateSubEvent.aspx" class="btn btn-primary btn-Sigin" data-toggle="popover" data-placement="right" data-content="Click Next to Create a SubEvent for your Event." title="" data-original-title="Popover on right" style="font-size: large; height: 43px;">
     <div class="text-center">

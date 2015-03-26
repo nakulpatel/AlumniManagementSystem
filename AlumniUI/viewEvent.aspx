@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <%--make things centered--%>
@@ -35,7 +35,7 @@
                 </li>
                 <li><a href="createEvent.aspx">Create Events</a>
                 </li>
-                <li><a href="createTask.aspx">Create Tasks</a>
+                <li><a href="createTask.aspx">Manage Tasks</a>
                 </li>
                 <li class="active"><a href="viewEvent.aspx">View Events</a>
                 </li>
@@ -47,36 +47,46 @@
     </div>
 </div>
 
-    <%--div for dropdown list--%>
-<div style= "border:0px solid #a41e35;width:600px;"class="center">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="lbl" runat="server" Text="Event Type"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-    <asp:Label ID="Label1" runat="server" Text="Owner"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label2" runat="server" Text="Date"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label3" runat="server" Text="Event"></asp:Label>
-    <br />
+
+   
+
+
+<div style="width:339px; float:left;" class="text-center">
+    Use the dropdown list to narrow down your search<br /><br />
+    Event Category<br />
     <asp:DropDownList ID="DropDownList1" runat="server">
-        <asp:ListItem>Networking</asp:ListItem>
-        <asp:ListItem>Fundraising</asp:ListItem>
+        <asp:ListItem>Networking Event</asp:ListItem>
+        <asp:ListItem>Student Event</asp:ListItem>
+        <asp:ListItem>Cultural Event</asp:ListItem>
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+    <br />
+    <br />
+    Event Owner<br />
     <asp:DropDownList ID="DropDownList2" runat="server">
-        <asp:ListItem>John</asp:ListItem>
-        <asp:ListItem>Jacob</asp:ListItem>
+        <asp:ListItem>Tina Vance-Knight</asp:ListItem>
+        <asp:ListItem></asp:ListItem>
     </asp:DropDownList>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+    Date<br />
     <asp:DropDownList ID="DropDownList3" runat="server">
-        <asp:ListItem>January 12</asp:ListItem>
+        <asp:ListItem>April 1st, 2015</asp:ListItem>
+        <asp:ListItem>April 20th, 2015</asp:ListItem>
+        <asp:ListItem>December 1st, 2014</asp:ListItem>
     </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+    Event<br />
     <asp:DropDownList ID="DropDownList4" runat="server">
-        <asp:ListItem>Job Fair</asp:ListItem>
+        <asp:ListItem>Victory for Tyler 2015</asp:ListItem>
     </asp:DropDownList>
+    <br />
+    <br />
     </div>
-    <p></p>
+   
+
+
+    <div>
     <div style= "border:0px solid #a41e35;width:1200px;height:625px"class="center">
      <div class="row" >
                 <div class="col-md-12">
@@ -103,37 +113,37 @@
                                     </thead>
                                     <tbody>
                                         <tr class="odd gradeX">
-                                            <td>Basketball Game</td>
-                                            <td>John Doe</td>
-                                            <td>March 4th, 2032</td>
+                                            <td><a href="http://www.alumni.temple.edu?sid=705&amp;gid=1&amp;pgid=6772&amp;cid=10692&amp;ecid=10692&amp;crid=0&amp;calpgid=3987&amp;calcid=5450">Victory for Tyler 2015</a></td>
+                                            <td>Tina Vance-Knight</td>
+                                            <td>April 1st, 2015</td>
                                             <td class="center">
-                                                <asp:Button ID="Button1" runat="server" Text="View" class="btn btn-primary"/>
+                                                <asp:Button ID="Button1" runat="server" Text="View" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button3" runat="server" Text="Delete" class="btn btn-primary"/>
+                                                <asp:Button ID="Button3" runat="server" Text="Delete" />
                                             </td>
                                         </tr>
                                         <tr class="even gradeC">
-                                            <td>Alumni party</td>
-                                            <td>Jane Smith</td>
-                                            <td>April</td>
+                                            <td>Alumni Weedend 2015</td>
+                                            <td>Gloria Easley</td>
+                                            <td>April 20th, 2015</td>
                                             <td class="center">
-                                                <asp:Button ID="Button2" runat="server" Text="View" class="btn btn-primary"/>
+                                                <asp:Button ID="Button2" runat="server" Text="View" />
                                             </td>
                                             <td class="center">
-                                                <asp:Button ID="Button4" runat="server" Text="Delete" class="btn btn-primary"/>
+                                                <asp:Button ID="Button4" runat="server" Text="Delete" />
                                             </td>
                                         </tr>
                                         <tr class="odd gradeA">
                                             <td>&nbsp;</td>
-                                            <td>John Jacob Jingleheimer Schmidt</td>
+                                            <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td class="center">&nbsp;</td>
                                             <td class="center">&nbsp;</td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>x</td>
-                                            <td>Me</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td class="center">&nbsp;</td>
                                             <td class="center">&nbsp;</td>
@@ -145,19 +155,9 @@
                             </div>
                         </div>
                     </div></div></div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    Sub Event Details
-                </a>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-
-                </div>
-            </div>
-        </div>
+        
     </div>
+        </div>
                     <!--End Advanced Tables -->
 </form>
 

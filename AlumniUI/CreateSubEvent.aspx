@@ -310,14 +310,60 @@
                                     </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <%--<div class="col-sm-2">
                                         <br />
                                         <asp:Button ID="btnLocations" runat="server" Text="Add additional locations" OnClick="btnLocations_Click" CssClass="btn btn-primary" />
                                         <%--<a class="btn btn-primary" runat="server" id="a1">Add additional locations</a>--%>
-                                    </div>
+                                   <%-- </div>--%>
 
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <div class="form-title">
+                                            Country
+                                    <div class="controls">
+                                        <input type="text" class="form-control" id="txtCountry" runat="server"/>
+                                    </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <%--<div class="form-group">
+                                    <div class="col-sm-2">
+                                        <div class="form-title">
+                                            Contact Phone Number
+                                    <div class="controls">
+                                        <input type="text" class="form-control" id="contactPhoneNumber" runat="server"/>
+                                    </div>
+                                        </div>
+                                    </div>
+                                    </div>--%>
+                                <div class="col-sm-3">
+                                    <div class="form-title">Country Code
+                                 <div class="input-group">
+                                     
+                                            <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">USA +1 <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                                <%--<li><a href="#">USA +1</a></li>--%>
+                                                                 <li><a href="#">Italy +39</a></li>
+                                                                <li><a href="#">UK +44</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#">Separated link</a></li>
+                                                            </ul>
+                                                        </div><!-- /btn-group -->
+                                                    <input type="text" class="form-control" aria-label="...">
+                                             </div><!-- /input-group -->
+                                    </div>
+                                    </div>
+                                <div class="col-sm-3">
+                                        <br />
+                                        <asp:Button ID="Button1" runat="server" Text="Add additional locations" OnClick="btnLocations_Click" CssClass="btn btn-primary" />
+                                        <%--<a class="btn btn-primary" runat="server" id="a1">Add additional locations</a>--%>
+                                    </div>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -513,8 +559,27 @@
                 <%--<p class="text-warning"><small>If no your sub event will be saved</small></p>--%>
             </div>
             <div class="modal-footer">
-                <a type="button" class="btn btn-default" href="cTask.aspx">no</a>
-                <a type="button" class="btn btn-primary" href="eventConfirmation.aspx">yes</a>
+                <a type="button" class="btn btn-default" href="viewEvent">no</a>
+                <a type="button" class="btn btn-primary" href="cTask.aspx">yes</a>
+            </div>
+        </div>
+    </div>
+</div>
+            <%--modal 2--%>
+            <div id="addSubEvent" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p>Would you like to add another sub Event</p>
+                <%--<p class="text-warning"><small>If no your sub event will be saved</small></p>--%>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="btn btn-default" href="viewEvent">no</a>
+                <a type="button" class="btn btn-primary" href="CreateSubEvent">yes</a>
             </div>
         </div>
     </div>

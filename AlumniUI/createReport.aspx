@@ -13,7 +13,7 @@
   <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_CR2SCSlcchF_V1JZKALtD7MrcD2v0JPHdUDwNYGkQWk.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_1Z_QIcHNvbuEiRqQcII5sIX9yVOP0oslaKtXcuHG-zw.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_bLnrJvSDMMMrixVK0gKebpAOMgS_nCHw7RJsNvIlMsU.css?parameter=1" media="screen" />
 <link type="text/css" rel="stylesheet" href="http://www.temple.edu/sites/temple/files/css/css_f0JINAe-xjdiutTtKaZSZvnJAiYNzR00LfG88yGwIVQ.css" media="print" />
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -150,7 +150,7 @@
                                 <div style= "border:0px solid #a41e35;width:200px;height:auto" class="center">
                                 <%--<div class="row">--%>
                                     <%--<div class="col-sm-2 form-submit">--%>
-                                        <asp:Button ID="Button1" runat="server" Text="Create Report" />
+                                        <asp:Button ID="Button1" runat="server" Text="Export to excel" class="btn btn-primary"/>
                                     </div>
                                 </div>
                             </div></div>

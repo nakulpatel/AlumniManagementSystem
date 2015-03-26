@@ -184,13 +184,22 @@ namespace AlumniUI {
         protected global::System.Web.UI.HtmlControls.HtmlInputText ZipCode;
         
         /// <summary>
-        /// btnLocations control.
+        /// txtCountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLocations;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCountry;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// sponsorName control.
