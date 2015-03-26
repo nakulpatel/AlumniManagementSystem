@@ -95,7 +95,7 @@
                </br>
 		                
                        <a class="btn btn-primary btn-Sigin" href="mainpage.aspx" style="font-size: x-large;">
-                           <strong>ADD USER</strong></a>&nbsp;
+                           <strong>Login</strong></a>&nbsp;
                        <p class="center-text">&nbsp;</p>
 
                     </div>	
