@@ -31,7 +31,7 @@
                 </li>
                 <li><a href="createEvent.aspx">Create Events</a>
                 </li>
-                <li><a href="createTask.aspx">Create Tasks</a>
+                <li><a href="createTask.aspx">Manage Tasks</a>
                 </li>
                 <li><a href="viewEvent.aspx">View Events</a>
                 </li>
